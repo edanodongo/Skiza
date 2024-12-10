@@ -1,13 +1,13 @@
 
 public class Track {
-    private String id;
-    private String title;
-    private Artist artist;
-    private Album album;
-    private String filePath;
-    private boolean isFavorite;
-    private long duration;
-    private String albumArtPath; // Path to the album art
+    final private String id;
+    final private String title;
+    final private Artist artist;
+    final private Album album;
+    final private String filePath;
+    final private boolean isFavorite;
+    final private long duration;
+    final private String albumArtPath; // Path to the album art
 
     public Track(String id, String title, Artist artist, Album album, String filePath, String albumArtPath, boolean isFavorite, long duration) {
         this.id = id;

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Playlist implements Serializable {
-    private String id;
+    final private String id;
     private String name;
     private List<Track> tracks;
 

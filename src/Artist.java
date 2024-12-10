@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Artist {
-    private String name;
-    private List<Album> albums;
+    final private String name;
+    final private List<Album> albums;
 
     public Artist(String name) {
         this.name = name;
