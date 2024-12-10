@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b2c89d2-d07b-4e44-b304-3e018aa9e9e4" name="Changes" comment="Updated Album">
-      <change beforePath="$PROJECT_DIR$/src/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Track.java" afterDir="false" />
+    <list default="true" id="0b2c89d2-d07b-4e44-b304-3e018aa9e9e4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Album.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
@@ -53,94 +49,6 @@
       <option name="presentableId" value="Default" />
       <updated>1733817016217</updated>
     </task>
-    <task id="LOCAL-00001" summary="Updated Album">
-      <option name="closed" value="true" />
-      <created>1733817760609</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1733817760609</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Updated Album">
-      <option name="closed" value="true" />
-      <created>1733817784191</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1733817784191</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Updated Album">
-      <option name="closed" value="true" />
-      <created>1733857734132</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1733857734132</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated Album">
-      <option name="closed" value="true" />
-      <created>1733857813691</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1733857813691</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated Album">
-      <option name="closed" value="true" />
-      <created>1733857910206</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1733857910206</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="User">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="*" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="false" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="user">
-                    <value>
-                      <list>
-                        <option value="*" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated Album" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Album" />
   </component>
 </project>
