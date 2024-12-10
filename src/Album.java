@@ -12,6 +12,7 @@ public class Album {
         this.tracks = new ArrayList<>();
     }
 
+
     public String getTitle() {
         return title;
     }
