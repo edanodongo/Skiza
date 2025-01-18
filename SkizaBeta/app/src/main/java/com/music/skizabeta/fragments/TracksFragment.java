@@ -2,7 +2,7 @@ package com.music.skizabeta.fragments;
 
 import static com.music.skizabeta.activities.HomeActivity.getPlaylistById;
 import static com.music.skizabeta.activities.HomeActivity.isBound;
-import static com.music.skizabeta.fragments.PlaylistFragment.allTracks;
+//import static com.music.skizabeta.fragments.PlaylistFragment.allTracks;
 import static com.music.skizabeta.activities.HomeActivity.selectedPlaylist;
 import static com.music.skizabeta.services.MusicPlayerService.currentPlaylist;
 import static com.music.skizabeta.services.MusicPlayerService.playingTrack;

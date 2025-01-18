@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_tracks"
+        android:icon="@drawable/ic_tracks"
+        android:title="Tracks" />
+    <item
+        android:id="@+id/nav_album"
+        android:icon="@drawable/ic_album"
+        android:title="Album" />
+    <item
+        android:id="@+id/nav_artists"
+        android:icon="@drawable/ic_artists"
+        android:title="Artists" />
+    <item
+        android:id="@+id/nav_playlist"
+        android:icon="@drawable/ic_playlist"
+        android:title="Playlist" />
+    <item
+        android:id="@+id/nav_lyrics"
+        android:icon="@drawable/ic_lyrics"
+        android:title="Lyrics" />
+    <!--
+    <item
+        android:id="@+id/nav_play"
+        android:icon="@drawable/ic_plays"
+        android:title="Play" />
+    <item
+        android:id="@+id/nav_playlist"
+        android:icon="@drawable/ic_playlist"
+        android:title="Playlist" />
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/ic_favorites"
+        android:title="Favorites" />
+    <item
+        android:id="@+id/nav_queue"
+        android:icon="@drawable/ic_queue"
+        android:title="Queue" />
+        -->
+</menu>
