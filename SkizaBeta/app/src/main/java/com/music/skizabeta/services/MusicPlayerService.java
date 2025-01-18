@@ -1,8 +1,5 @@
 package com.music.skizabeta.services;
 
-import static com.music.skiza.activities.HomeActivity.allTracksPlaylist;
-import static com.music.skiza.fragments.PlaylistFragment.selectedPlaylist;
-
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -24,15 +21,15 @@ import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
-import com.music.skiza.MyApp;
-import com.music.skiza.R;
-import com.music.skiza.activities.HomeActivity;
-import com.music.skiza.listeners.PlaylistClickListener;
-import com.music.skiza.models.MusicLibrary;
-import com.music.skiza.models.Playlist;
-import com.music.skiza.models.Track;
-import com.music.skiza.models.TrackViewModel;
-import com.music.skiza.receivers.NotificationReceiver;
+import com.music.skizabeta.MyApp;
+import com.music.skizabeta.R;
+import com.music.skizabeta.activities.HomeActivity;
+import com.music.skizabeta.listeners.PlaylistClickListener;
+import com.music.skizabeta.models.MusicLibrary;
+import com.music.skizabeta.models.Playlist;
+import com.music.skizabeta.models.Track;
+import com.music.skizabeta.models.TrackViewModel;
+import com.music.skizabeta.receivers.NotificationReceiver;
 
 import java.util.Collections;
 import java.util.List;

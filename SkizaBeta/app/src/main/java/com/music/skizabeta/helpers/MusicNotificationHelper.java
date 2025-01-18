@@ -10,7 +10,7 @@ import androidx.core.app.NotificationCompat;
 import com.music.skizabeta.R;
 import com.music.skizabeta.activities.HomeActivity;
 import com.music.skizabeta.models.Track;
-import com.music.skizabeta.recievers.NotificationReceiver;
+import com.music.skizabeta.receivers.NotificationReceiver;
 
 
 public class MusicNotificationHelper {
