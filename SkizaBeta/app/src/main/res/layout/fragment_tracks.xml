@@ -5,10 +5,240 @@
     android:layout_height="match_parent"
     tools:context=".fragments.TracksFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tracksText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracks"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:layout_margin="16dp"/>
+
+        <!-- Include the text view title layout -->
+        <include
+            android:id="@+id/title"
+            layout="@layout/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTracks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/addSelectedTracksButton"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"/>
+
+        <Button
+            android:id="@+id/addSelectedTracksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tracksText"
+            android:text="Add Selected Tracks to Playlist"
+            android:gravity="center"
+            android:visibility="gone" />
+        <!-- Hidden until multi-select mode -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tracksRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/addSelectedTracksButton"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="4dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <!-- Expanded view (visible in expanded state) -->
+    <LinearLayout
+        android:id="@+id/expanded_player"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/lavender"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/expanded_cover"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/placeholder_cover"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvTrackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist Name"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            android:paddingTop="4dp"/>
+
+        <!-- SeekBar -->
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvArtistName"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00:00"
+                />
+
+            <TextView
+                android:id="@+id/total_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="00:00" />
+
+        </LinearLayout>
+
+        <!-- Previous, Play_Pause, and Next Buttons -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_previous"
+                android:contentDescription="Previous" />
+
+            <ImageButton
+                android:id="@+id/btnPlayPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play"
+                android:contentDescription="Play/Pause"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next"
+                android:contentDescription="Next" />
+        </LinearLayout>
+
+        <!-- Shuffle, Like, and Add to Playlist Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageButton
+                android:id="@+id/btnShuffle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_shuffle"
+                android:contentDescription="Shuffle" />
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:contentDescription="Like"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp" />
+
+            <ImageButton
+                android:id="@+id/btnAddToPlaylist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_playlist"
+                android:contentDescription="Add to Playlist" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Mini-player view (visible in collapsed state) -->
+    <LinearLayout
+        android:id="@+id/mini_player"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:background="@color/lavender"
+        android:layout_marginBottom="80dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/mini_player_cover"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/placeholder_cover"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/mini_player_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:text="Track Title"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <ImageButton
+            android:id="@+id/mini_player_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play"
+            android:contentDescription="Play/Pause" />
+    </LinearLayout>
+
 
 </FrameLayout>
