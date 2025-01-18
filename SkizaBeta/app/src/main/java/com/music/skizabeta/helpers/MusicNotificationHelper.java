@@ -1,8 +1,5 @@
 package com.music.skizabeta.helpers;
 
-
-import static androidx.core.app.ServiceCompat.startForeground;
-
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -10,13 +7,13 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import androidx.core.app.NotificationCompat;
 
-import com.music.skiza.R;
-import com.music.skiza.activities.MainActivity;
-import com.music.skiza.models.Track;
-import com.music.skiza.receivers.NotificationReceiver;
+import com.music.skizabeta.R;
+import com.music.skizabeta.activities.HomeActivity;
+import com.music.skizabeta.models.Track;
+import com.music.skizabeta.recievers.NotificationReceiver;
+
 
 public class MusicNotificationHelper {
-
 
     private Context context;
 
@@ -26,7 +23,7 @@ public class MusicNotificationHelper {
 
     public Notification buildNotification(Track track, boolean isPlaying) {
         // Pending intent to open the app when the notification is clicked
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent = new Intent(context, HomeActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         // Play/Pause action
