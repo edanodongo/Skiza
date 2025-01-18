@@ -1,5 +1,8 @@
 package com.music.skizabeta.services;
 
+import static com.music.skizabeta.activities.HomeActivity.allTracksPlaylist;
+import static com.music.skizabeta.activities.HomeActivity.selectedPlaylist;
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -133,7 +136,7 @@ public class MusicPlayerService extends Service implements PlaylistClickListener
 
         mediaPlayer = new MediaPlayer();
         //MyApp myApp = new MyApp();
-        com.music.skiza.MyApp.setMusicPlayerService(this);
+        com.music.skizabeta.MyApp.setMusicPlayerService(this);
 
         // Notifications to be updated
         //createNotificationChannel();
@@ -621,11 +624,11 @@ public class MusicPlayerService extends Service implements PlaylistClickListener
         notificationLayout.setImageViewBitmap(R.id.notification_album_art, albumArt);
 
         // Set play/pause icon based on state
-        int playPauseIcon = isPlaying ? R.drawable.ic_pause : R.drawable.ic_plays;
+        int playPauseIcon = isPlaying ? R.drawable.ic_pause : R.drawable.ic_play;
         notificationLayout.setImageViewResource(R.id.play_pause_button, playPauseIcon);
 
-        notificationLayout.setImageViewResource(R.id.next_button, R.drawable.ic_next_ml);
-        notificationLayout.setImageViewResource(R.id.previous_button, R.drawable.ic_previous_ml);
+        notificationLayout.setImageViewResource(R.id.next_button, R.drawable.ic_next);
+        notificationLayout.setImageViewResource(R.id.previous_button, R.drawable.ic_previous);
 
 
         // Intents for next, previous, and play/pause actions

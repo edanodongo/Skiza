@@ -9,8 +9,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.music.skizabeta.R;
+import com.music.skizabeta.models.Playlist;
 
 public class HomeActivity extends AppCompatActivity {
+
+    public static Playlist allTracksPlaylist;
+    public static Playlist selectedPlaylist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
