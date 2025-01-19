@@ -8,4 +8,8 @@
     </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
     </style>
+
+    <style name="Theme.AppCompat.MyTheme">
+
+    </style>
 </resources>
