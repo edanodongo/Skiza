@@ -18,6 +18,7 @@ media = "1.7.0"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-media = { module = "androidx.media:media", version.ref = "media" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
