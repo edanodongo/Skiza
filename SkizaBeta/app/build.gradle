@@ -71,5 +71,4 @@ dependencies {
 
     implementation(libs.androidx.media)
     implementation libs.gson
-    implementation(libs.firebase.analytics)
 }
