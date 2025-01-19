@@ -91,7 +91,7 @@ public class HomeActivity extends AppCompatActivity implements TrackFinished {
     PlaylistFragment playlistFragment = new PlaylistFragment();
 
 
-    private Playlist selectedPlaylist;
+    //private Playlist selectedPlaylist;
     private Playlist currentList;
     //public static List<Playlist> playlists;
 
