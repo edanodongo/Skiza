@@ -485,11 +485,14 @@ public class HomeActivity extends AppCompatActivity implements TrackFinished {
     public static Playlist getPlaylistById(String playlistId) {
         MusicLibrary musicLibrary = MyApp.getMusicLibrary();
 
+        return null;
+        /*
         return musicLibrary.getPlaylists()
                 .stream()
                 .filter(p -> p.getId().equals(playlistId))
                 .findFirst()
                 .orElse(null);
+        */
     }
 
 
